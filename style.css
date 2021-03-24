@@ -113,3 +113,130 @@ body {
     padding-top: 0;
     width: 400px;
   }
+
+
+
+
+
+@media (max-width: 320px) {
+  body {
+    background: darkslategrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+  
+ 
+  
+  div, h2, p, .town, .NY, .event, .mountains {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .left {
+    margin: 0 auto;
+    max-width: 320px;
+    padding: 0 auto;
+  }
+  
+ 
+
+  .columns {
+    display: flex;
+  }
+  
+  .column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  
+  .main-column {
+    flex: 3;
+  }
+  
+  .nested-column {
+    flex: 2;
+  }
+  
+  .article {
+    background: white;
+    color: #666;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-basis: auto;
+    margin: 10px;
+  }
+  
+  .article-image {
+    background: #eee;
+    padding-top: 60%;
+    position: relative;
+    width: 100%;
+  }
+  
+  .article-image img {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .article-image.NY {
+    padding-top: 65%;
+  }
+  
+  .article-image.mountains {
+    padding-top: 65%;
+  }
+  
+  .article-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .article-title {
+    color: #333;
+    flex-shrink: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .article-text {
+    flex: 1;
+    margin-top: 5px;
+  }
+  
+  .article-footer {
+    display: flex;
+    font-size: 0.85em;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .first-article {
+    flex-direction: row;
+  }
+  
+  .first-article .article-body {
+    flex: 1;
+  }
+  
+  .first-article .article-image {
+    height: 300px;
+    order: 2;
+    padding-top: 0;
+    width: 320px;
+  }
+
+}
+
+ @-ms-viewport{ 
+   width: device-width;
+ }
